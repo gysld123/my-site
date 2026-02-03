@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left nav-item" id="work-nav">WORK</div>
+        <div class="nav-right">
+            <span class="nav-item" id="about-btn">ABOUT</span>
+            <span class="nav-item" id="contact-btn">CONTACT</span>
+        </div>
+    </nav>
+
+    <div id="work-overlay" class="overlay">
+        <div class="close-btn">CLOSE</div>
+        <div class="scroll-wrapper">
+            <header class="project-header">
+                <h1 id="project-title">PROJECT</h1>
+                <p id="project-desc">Description goes here.</p>
+            </header>
+            <div class="project-content">
+                <div id="content-branding" class="project-group active">
+                    <div class="content-box"><img src="./img/port1.PNG"></div>
+                    <div class="content-box"><img src="./img/port2.PNG"></div>
+                    <div class="content-box"><img src="./img/port3.PNG"></div>
+                    <div class="content-box"><img src="./img/oom-4.png"></div>
+                    <div class="content-box"><img src="./img/oom-5.png"></div>
+                    <div class="content-box"><img src="./img/oom-6.png"></div>
+                    <div class="content-box"><img src="./img/oom-7.png"></div>
+                </div>
+                <div id="content-project02" class="project-group"></div>
+                <div id="content-project03" class="project-group"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-overlay" class="overlay">
+        <div class="close-btn">CLOSE</div>
+        <div class="overlay-content">
+            <h1 style="font-size: 50px; letter-spacing: 10px; text-align: center; margin-top: 20vh;">ABOUT ME</h1>
+            <p style="text-align: center; color: #888; margin-top: 20px;">Your story goes here.</p>
+        </div>
+    </div>
+
+    <div id="contact-overlay" class="overlay">
+        <div class="close-btn">CLOSE</div>
+        <div class="contact-layout">
+            <div class="bg-text-wrap">
+                <div class="bg-text">GET IN TOUCH</div>
+                <div class="blob b1"></div>
+                <div class="blob b2"></div>
+                <div class="blob b3"></div>
+            </div>
+            <div class="contact-header">
+                <p class="sub-title">Contact me for collaboration</p>
+                <div class="line"></div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="label">M-mail.</span>
+                    <a href="mailto:gysld123@naver.com" class="value">gysld123@naver.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="label">Call.</span>
+                    <a href="tel:01072110086" class="value">010 7211 0086</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper" id="main-wrapper">
+        <div class="container">
+            <div class="card" data-title="BRANDING" data-desc="Minimal Identity Design">
+                <div class="card-inner" style="background-image: url('./img/card1.png');">BRANDING</div>
+            </div>
+            
+            <div class="card" data-title="VIDEO PROJECT" data-desc="Video Preview Example">
+                <div class="card-inner">
+                    <video class="card-video" autoplay loop muted playsinline>
+                        <source src="./img/issueverse.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">VIDEO</span>
+                </div>
+            </div>
+
+            <div class="card" data-title="MOTION" data-desc="3D Animation Art">
+                <div class="card-inner" style="background-image: url('./img/.PNG');">PROJECT 03</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="mov2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
